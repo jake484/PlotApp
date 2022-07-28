@@ -12,8 +12,8 @@ WORKDIR /home/genie/app
 # configure permissions
 RUN chown genie:genie -R *
 
-RUN chmod +x lib/Data_Upload
-RUN chmod +x lib/
+RUN chmod +x /home/genie/app/lib/Data_Upload
+RUN chmod +x /home/genie/app/lib/
 
 # switch user
 USER genie
