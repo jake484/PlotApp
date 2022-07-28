@@ -48,7 +48,7 @@ function ui(model::PlotPage)
                 cell(
                     class="st-module", size=3,
                     uploader(label="数据上传", :auto__upload, :multiple, method="POST",
-                        url="http://localhost:8000/", field__name="csv_file")
+                        url=SERVEURL, field__name="csv_file")
                 )
                 cell(
                     class="st-module",

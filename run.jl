@@ -3,6 +3,8 @@ ENV["JULIA_PKG_SERVER"] = "https://mirrors.tuna.tsinghua.edu.cn/julia/" # 清华
 Pkg.activate(".") # 将环境切换到项目文件夹
 Pkg.instantiate() # 安装依赖包
 
+const SERVEURL = "http://121.40.92.145:8080/"  # 服务器地址
+
 try # 服务端运行
     if isDeploy
         include("lib/PlotApp.jl")
