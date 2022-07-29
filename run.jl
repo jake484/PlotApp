@@ -32,7 +32,7 @@ catch e # 本地运行
         PlotPage |> init |> ui |> html
     end
 
-    up(open_browser=true)
+    up(open_browser=true,async=false)
 end
 
 
